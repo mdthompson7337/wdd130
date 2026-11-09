@@ -1,0 +1,57 @@
+/* Add your CSS here to style the photography portfolio*/
+
+/* Go here to get fonts: https://fonts.google.com/*/
+/* Select a font, and copy it's @import statement. Paste at the top of this file.*/
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Flexbox cheat sheet: https://flexbox.malven.co/*/
+
+body {
+    margin: 0;
+}
+
+h1 {
+    font-family: "Anton";
+    text-align: center;
+    font-size: 3em;
+}
+
+h2 {
+    font-family: "Inter";
+    text-align: center;
+}
+
+nav {
+    background-color: rgb(46, 124, 219);
+    height: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 25px;
+    border-bottom: 4px solid rgb(14, 19, 147);
+}
+nav a {
+    color: rgb(224, 255, 226);
+    text-decoration: none;
+    font-family: "Inter";
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 10px;
+}
+nav a:hover {
+    background-color: rgb(89, 164, 255);
+    color: rgb(30, 0, 228);
+}
+
+img {
+    max-width: 200px;
+}
+
+#img-container {
+    display: flex;
+    flex-direction: column;
+    max-height: 1400px;
+    flex-wrap: wrap;
+    margin-left: 30%;
+    margin-right: 30%;
+    gap: 10px;
+}

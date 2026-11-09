@@ -1,0 +1,12 @@
+W3 course
+
+Zengarden.com
+
+coolors - website for finding colors
+
+Final project has should have no default fonts
+
+website for grid guidlines:
+malven.co
+grid.malven.co
+flex.malven.co
