@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations 101</title>
+    <style>
+
+        @keyframes shapeShifter {
+            0% {border-radius: 0;}
+            50% {border-radius: 50%;}
+            100% {border-radius: 100%;}
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: cornflowerblue;
+            border-radius: 15px;
+            animation-name: shapeShifter;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+
+            transition: width 5s, 
+                background-color 5s,
+                transform 5s ease-in-out;
+        }
+
+        div:hover {
+            width: 500px;
+            background-color: darksalmon;
+            transform: scale(5);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Our fastest iPhone ever</p>
+    </div>
+</body>
+</html>
